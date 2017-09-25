@@ -1,4 +1,6 @@
 #!/usr/bin/python
+#copyright 2017 aycgit
+# this code is meant more for reference than for usage.
 
 
 #when setting up change: the ips and the lirc config name
@@ -31,7 +33,7 @@ print 'Connect'
 
 
 wii.rpt_mode = cwiid.RPT_BTN
- 
+#should be a better way of doing this, just checking buttons in a while loop 
 while True:
 
   buttons = wii.state['buttons']
